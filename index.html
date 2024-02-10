@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -13,8 +17,10 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header card">
       <nav class="theme-menu header__theme-menu">
+        <span class="header_logo"> &lt;/HTML&gt; </span>
+        <h1 class="header_tittle">закрывающий тег</h1>
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -40,7 +46,517 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+
+    <main class="main">
+      <ul class="content__articles">
+        <li class="content__article card">
+          <h2 class="content__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              Это было самое начало пути. На этом этапе важно было проникнуться
+              основами и настроиться на учёбу. И, возможно, подумать, как новые
+              знания могут повлиять на ваше будущее.
+            </p>
+            <p>Место для ваших воспоминаний о начале обучения.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">1 спринт: Я — чистый лист</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              На первых этапах мы работали со страхами и сомнениями, которые
+              часто испытывают новички. Один из них — страх перед чистым листом.
+              Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
+              за этим ощущением скрываются более глубокие вопросы: с чего
+              начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+            </p>
+            <p>Место для ваших воспоминаний о начале первого спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">1 спринт: А если не получится?</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              Первый проект — позади! Но это всё ещё самое начало пути. Радость
+              могла быстро померкнуть и смениться ожиданием провала. Или вы,
+              наоборот, могли вдохновиться успехами и поверить в себя.
+            </p>
+            <p>Место для ваших воспоминаний об окончании первого спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">2 спринт: Погоня за идеалом</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              На этом этапе вы уже достаточно разбирались в основах вёрстки,
+              чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
+              за идеалом и понять, что он недостижим. А, может, вы вовсе и не
+              подвержены перфекционизму и вместо того, чтобы сделать идеально,
+              старались просто сделать.
+            </p>
+            <p>Место для ваших воспоминаний о начале второго спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+            
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">2 спринт: О тех, кто рядом</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              Всё это время вы были не одиноки (хотя, возможно, иногда и
+              чувствовали, что одни против целого мира). Вас окружали
+              одногруппники, команда сопровождения и просто близкие люди,
+              которым можно пожаловаться, если очередной макет просто так не
+              поддавался. Осваивать что-то новое легче, когда рядом есть
+              единомышленники, не правда ли?
+            </p>
+            <p>Место для ваших воспоминаний об окончании второго спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">3 спринт: Обходные стратегии</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              На этом курсе вы постоянно решали разные задачи. В какой-то момент
+              вам могло показаться, что решения просто иссякли. Значит, пришло
+              время посмотреть на задачу под другим углом.
+            </p>
+            <p>Место для ваших воспоминаний о начале третьего спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">3 спринт: Когда опускаются руки</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              Во время учёбы часто возникает чувство, когда не знаешь, за что
+              хвататься. Вроде и проектную пора сдавать, и задачи хочется
+              порешать, и в теории получше разобраться, и жизнь не забыть
+              пожить. В такие моменты очень нужна концентрация. Вспомните,
+              откуда вы её черпали.
+            </p>
+            <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-ico"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="content__article card">
+          <h2 class="content__title">«Сейчас я здесь»</h2>
+          <div class="content__picture">
+            <img
+              loading="lazy"
+              class="content__picture_img"
+              src="./images/truck.png"
+              alt="пиксельный рисунок автодома"
+            />
+            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+          </div>
+          <div class="content__text">
+            <p>
+              Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+              Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
+              с окончанием курса учёба не заканчивается. Вёрстка — это целый
+              мир. И этот мир постоянно меняется. Познать его полностью не
+              получится, но это тот случай, когда важен сам процесс познания.
+              Ведь часто путь — и есть результат.
+            </p>
+            <p>
+              Место, чтобы остановиться, подумать и написать, что вы чувствуете
+              в этой точке пути.
+            </p>
+
+            <div class="content__button">
+              <button type="button" class="card__icon-button">
+                <svg
+                  class="like-icon"
+                  width="27"
+                  height="24"
+                  viewBox="0 0 27 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M6 0H3V3H6V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 0H6V3H9V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 3H0V6H3V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 6H0V9H3V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M3 9H0V12H3V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 0H9V3H12V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M6 12H3V15H6V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M9 15H6V18H9V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M12 18H9V21H12V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 0H24V3H21V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 0H21V3H18V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 3H27V6H24V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 6H27V9H24V6Z" fill="var(--text-color, #000000)" />
+                  <path d="M24 9H27V12H24V9Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 0H18V3H15V0Z" fill="var(--text-color, #000000)" />
+                  <path d="M21 12H24V15H21V12Z" fill="var(--text-color, #000000)" />
+                  <path d="M18 15H21V18H18V15Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 18H18V21H15V18Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 3H12V6H15V3Z" fill="var(--text-color, #000000)" />
+                  <path d="M15 21H12V24H15V21Z" fill="var(--text-color, #000000)" />
+                </svg>
+              </button>
+
+              <button type="button" class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="footer card">
+      <button type="button" class="footer__button-save">
+      <svg class="floppy-ico" viewBox="0 0 39 39">
+        <use href="./svg/floppy.svg#floppy" />
+      </svg>
+      <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
+    </button>
+    </footer>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
