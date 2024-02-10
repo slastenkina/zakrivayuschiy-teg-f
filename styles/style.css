@@ -90,14 +90,16 @@ button:disabled::before {
 
 .content__picture {
   position: relative;
+  max-block-size: 700px;
+  border-block-start: 2px solid var(--text-color, #000000);
+  border-block-end: 2px solid var(--text-color, #000000);
 }
 
 .content__picture_img {
   inline-size: 100%;
   object-position: center;
   object-fit: cover;
-  border-block-start: 2px solid var(--text-color, #000000);
-  border-block-end: 2px solid var(--text-color, #000000);
+
 }
 
 .content__picture_tag {
@@ -139,6 +141,36 @@ button:disabled::before {
   border: none;
 }
 
+/*фильтры*/
+
+.bright_blur {
+  filter: blur(1.2rem) opacity(70%);
+}
+
+.invert {
+filter: invert(0.7);
+}
+
+.saturate {
+  filter: saturate(258%);
+}
+
+.sepia {
+  filter: sepia(78%) brightness(120%);
+}
+
+.hue-rotate {
+filter: hue-rotate(95deg);
+}
+
+.grayscale {
+  filter: grayscale(1);
+}
+
+.multiply {
+filter: invert(0.2) brightness(120%) saturate(130%) hue-rotate(30deg);
+}
+
 /*
 .like-icon {
   block-size: 36px;
@@ -147,8 +179,6 @@ button:disabled::before {
 */
 
 .card__like-button {
-  color: inherit;
-  background-color: transparent;
   border: 2px solid var(--text-color, #000000);
   padding: 7px 35px;
 }
