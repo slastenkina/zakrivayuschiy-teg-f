@@ -287,8 +287,6 @@
   }
 }
 
-
-
 .dialog__window {
   background-color: var(--bg-color, #ffffff);
   border: 2px solid var(--text-color, #000000);
