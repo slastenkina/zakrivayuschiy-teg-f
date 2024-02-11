@@ -280,9 +280,14 @@
   block-size: 100%;
 }
 
-.button:hover::before {
-  transform: scaleX(1);
+/*стили наведения применяются только для устройств, которые его поддерживают*/
+@media (hover:hover) {
+  .button:hover::before {
+    transform: scaleX(1);
+  }
 }
+
+
 
 .dialog__window {
   background-color: var(--bg-color, #ffffff);
@@ -340,3 +345,4 @@ dialog::backdrop {
     block-size: 28px;
   }
 }
+
