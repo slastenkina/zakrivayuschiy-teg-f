@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
-  
+
   <body class="page">
     <header class="header card">
       <nav class="theme-menu header__theme-menu">
@@ -605,10 +605,10 @@
           </svg>
           <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form>
+        <form method="dialog">
           <button
             class="dialog__button button"
-            type="button"
+            type="submit"
             onclick="window['dialog-id'].close()"
           >
             <span class="button__text">ок</span>
