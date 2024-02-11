@@ -6,6 +6,9 @@
   --accent-font: "Press Start 2P", serif;
   --bg-color: #ffffff;
   --text-color: #000000;
+  --button-text: #ffffff;
+  --heart-contour: #000000;
+  --heart-body: #FF0000;
 
   --bg-image: repeating-linear-gradient(
       to left,

@@ -38,6 +38,10 @@ input {
   background-color: transparent;
 }
 
+button:focus {
+  outline: none;
+}
+
 ul,
 ol {
   list-style: none;
