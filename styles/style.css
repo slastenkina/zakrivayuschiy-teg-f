@@ -22,6 +22,7 @@
   font-variation-settings: "wght" var(--main-font-text-weight, 400);
   color: var(--text-color, #000000);
   background-image: var(--bg-image);
+  background-attachment: fixed;
   background-color: var(--bg-color, #ffffff);
   background-size: cover;
 }
@@ -29,7 +30,7 @@
 .card {
   background-color: var(--bg-color, #ffffff);
   border: 2px solid var(--text-color, #000000);
-  max-inline-size: 696px;
+  max-inline-size: 698px;
   margin-inline: auto;
 }
 
@@ -37,7 +38,7 @@
   margin: 100px auto;
   padding-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   padding-block-end: 25px;
-  font-family: var(--accent-font, "Press Start 2P", serif);
+  font-family: var(--accent-font, "Press Start 2P", fantasy);
   text-transform: uppercase;
 }
 
@@ -68,7 +69,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: var(--accent-font, "Press Start 2P", serif);
+  font-family: var(--accent-font, "Press Start 2P", fantasy);
   text-transform: uppercase;
   font-size: 14px;
   cursor: pointer;
@@ -118,7 +119,7 @@
 .content__articles {
   display: grid;
   justify-content: center;
-  gap: 46px;
+  gap: 48px;
 }
 
 .content__title {
@@ -146,8 +147,7 @@
   position: absolute;
   inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
   inset-inline-end: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
-  font-family: var(--accent-font, "Press Start 2P", serif);
-  text-transform: uppercase;
+  font-family: var(--accent-font, "Press Start 2P", fantasy);
   font-size: 14px;
   mix-blend-mode: hard-light;
   opacity: 50%;
@@ -161,6 +161,79 @@
     text-stroke: 1px var(--bg-color, #ffffff);
     text-shadow: none;
   }
+}
+
+.content__text {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  line-height: 1.17;
+}
+
+.content__button {
+  display: flex;
+  gap: 4px;
+  justify-content: end;
+  position: relative;
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: grid;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color, #000000);
+  transition: border-color 0.3s ease;
+}
+
+.like-icon {
+  inline-size: 39px;
+}
+
+.card__like-button {
+  inline-size: 130px;
+}
+
+.button {
+  position: relative;
+  border: 2px solid var(--text-color, #000000);
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--text-color, #000000);
+  transition: box-shadow 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--text-color, #000000);
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+/*стили наведения применяются только для устройств, которые его поддерживают*/
+@media (hover: hover) {
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.button__text {
+  font-size: 14px;
+  line-height: 0.9;
+  font-family: var(--accent-font, "Press Start 2P", fantasy);
+  align-self: center;
+  color: var(--button-text, #ffffff);
+  mix-blend-mode: difference;
 }
 
 /*фильтры для изображений*/
@@ -193,50 +266,6 @@
   filter: invert(0.2) brightness(120%) saturate(130%) hue-rotate(30deg);
 }
 
-.content__text {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-  line-height: 1.2;
-}
-
-.content__button {
-  display: flex;
-  justify-content: end;
-  gap: 4px;
-  position: relative;
-}
-
-.card__icon-button {
-  border: 2px solid transparent;
-  cursor: pointer;
-  display: grid;
-}
-
-.card__icon-button:focus-visible {
-  border-color: var(--text-color, #000000);
-  transition: border-color 0.3s ease;
-}
-
-.like-icon {
-  block-size: 36px;
-  inline-size: 39px;
-}
-
-.card__like-button {
-  inline-size: 130px;
-}
-
-.button__text {
-  font-size: 14px;
-  line-height: 0.9;
-  font-family: var(--accent-font, "Press Start 2P", serif);
-  align-self: center;
-  color: var(--button-text, #ffffff);
-  mix-blend-mode: difference;
-}
-
 .footer {
   margin: 50px auto 100px;
 }
@@ -247,7 +276,7 @@
   justify-content: center;
   align-items: center;
   padding: 15px 21px 15px 19px;
-  gap: 7px;
+  gap: 9px;
 }
 
 .footer__floppy-ico {
@@ -255,36 +284,6 @@
   block-size: 21px;
   color: var(--button-text, #ffffff);
   mix-blend-mode: difference;
-}
-
-.button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--text-color, #000000);
-  transition: box-shadow 0.3s ease;
-}
-
-.button {
-  position: relative;
-  border: 2px solid var(--text-color, #000000);
-  cursor: pointer;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--text-color, #000000);
-  transform: scaleX(0);
-  transition: transform 0.5s ease-in-out;
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-/*стили наведения применяются только для устройств, которые его поддерживают*/
-@media (hover:hover) {
-  .button:hover::before {
-    transform: scaleX(1);
-  }
 }
 
 .dialog__window {
@@ -314,7 +313,7 @@
 }
 
 .dialog__text {
-  font-family: var(--accent-font, "Press Start 2P", serif);
+  font-family: var(--accent-font, "Press Start 2P", fantasy);
   color: var(--text-color, #000000);
   font-size: 14px;
   line-height: 1.5;
@@ -323,7 +322,7 @@
 .dialog__button {
   inline-size: 100%;
   text-transform: uppercase;
-  padding: 12px;
+  padding: 7px;
 }
 
 dialog::backdrop {
@@ -338,9 +337,12 @@ dialog::backdrop {
     flex-direction: column;
   }
 
-  .floppy-ico {
+  .footer__floppy-ico {
     inline-size: 28px;
     block-size: 28px;
   }
-}
 
+  .dialog__window {
+  inline-size: 341px;
+  }
+}

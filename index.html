@@ -59,8 +59,11 @@
               loading="lazy"
               class="content__picture_img"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="пиксельный рисунок автодома в фиолетовых цветах."
             />
+            <!-- по статье повторяющиеся картинки лучше не прописывать с alt, кроме первой, 
+              но в данном случе наверное прописать - картинки немного отличаются 
+              (и при изменении контента могут быть другими) -->
             <span class="content__picture_tag">&lt;/HTML&gt;</span>
           </div>
           <div class="content__text">
@@ -126,7 +129,7 @@
               loading="lazy"
               class="content__picture_img bright_blur"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="размытый рисунок автодома."
             />
             <span class="content__picture_tag">&lt;/HTML&gt;</span>
           </div>
@@ -196,9 +199,9 @@
               loading="lazy"
               class="content__picture_img invert"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="рисунок автодома с инвертированными цветами."
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">&lt;CSS&gt;</span>
           </div>
           <div class="content__text">
             <p>
@@ -263,9 +266,9 @@
               loading="lazy"
               class="content__picture_img saturate"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="рисунок автодома в насыщенных цветах."
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">&lt;desigions&gt;</span>
           </div>
           <div class="content__text">
             <p>
@@ -330,9 +333,9 @@
               loading="lazy"
               class="content__picture_img sepia"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="рисунок автодома в цветах сепия."
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">care</span>
           </div>
           <div class="content__text">
             <p>
@@ -399,9 +402,9 @@
               loading="lazy"
               class="content__picture_img hue-rotate"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="рисунок автдома в изменённых цветах в красных тонах."
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">&lt;support&gt;</span>
           </div>
           <div class="content__text">
             <p>
@@ -464,9 +467,9 @@
               loading="lazy"
               class="content__picture_img grayscale"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="пиксельный рисунок автодома в черно-белом варианте"
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">&lt;lifes-style: none;&gt;</span>
           </div>
           <div class="content__text">
             <p>
@@ -533,9 +536,9 @@
               loading="lazy"
               class="content__picture_img variety"
               src="./images/truck.png"
-              alt="пиксельный рисунок автодома"
+              alt="рисунок автодома в сиреневых цветах."
             />
-            <span class="content__picture_tag">&lt;/HTML&gt;</span>
+            <span class="content__picture_tag">&lt;experience&gt;</span>
           </div>
           <div class="content__text">
             <p>
@@ -597,24 +600,6 @@
           </div>
         </li>
       </ul>
-
-      <dialog id="dialog-id" class="dialog__window">
-        <div class="dialog__content">
-          <svg class="dialog__floppy-ico" viewBox="0 0 39 39">
-            <use href="./svg/floppy.svg#floppy" />
-          </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog">
-          <button
-            class="dialog__button button"
-            type="submit"
-            onclick="window['dialog-id'].close()"
-          >
-            <span class="button__text">ок</span>
-          </button>
-        </form>
-      </dialog>
     </main>
 
     <footer class="footer">
@@ -630,6 +615,20 @@
         <span class="button__text">Сохранить&nbsp;на&nbsp;память</span>
       </button>
     </footer>
+
+    <dialog id="dialog-id" class="dialog__window">
+      <div class="dialog__content">
+        <svg class="dialog__floppy-ico" viewBox="0 0 39 39">
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <form method="dialog">
+        <button class="dialog__button button" type="submit">
+          <span class="button__text">ок</span>
+        </button>
+      </form>
+    </dialog>
 
     <script src="./scripts/like.js"></script>
   </body>
